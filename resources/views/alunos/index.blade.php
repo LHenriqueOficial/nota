@@ -5,7 +5,7 @@
 <form action="alunos/create">
     <div class="field">
         <div class="control">
-            <button class=" button button-success" type="submit">Inserir novo Aluno</button>
+            <button class=" btn btn-info" type="submit">Inserir novo Aluno</button>
         </div>
 
     </div>
