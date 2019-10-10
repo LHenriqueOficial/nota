@@ -29,8 +29,8 @@
             <td>{{$aluno->nota}}</td>
             <td>
             <form action="{{route('alunos.destroy', $aluno->id)}}" method="POST">
-            <a href="{{route('alunos.edit', $aluno->id)}}"><button class=" btn btn-warning">Editar</button></a>
-            <a href="{{route('alunos.show', $aluno->id)}}"><button class="btn btn-info"> Mostrar</button></a>
+            <a href="{{route('alunos.edit', $aluno->id)}}"><button type="button" class=" btn btn-warning">Editar</button></a>
+            <a href="{{route('alunos.show', $aluno->id)}}"><button type="button" class="btn btn-info"> Mostrar</button></a>
             @csrf
             @method('DELETE')
             <button class="btn btn-danger" type="submit">Remover</button>

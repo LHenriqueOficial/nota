@@ -43,9 +43,9 @@
        
         <input type="submit" class=" btn btn-dark" id="btnGravar" value="Gravar">
         <input type="reset" class="btn btn-dark" id="tbnreset" value="Limpar">
+        <td><a href="{{route('alunos.index', $aluno->id)}}"><button class="btn btn-dark"> Voltar Lista Alunos</button></a></td>
     </form>
-    <td><a href="{{route('alunos.index', $aluno->id)}}">Voltar Lista Alunos</a></td>
 
-
+    
 </div>
 @endsection

@@ -31,7 +31,9 @@
     <div class="columns col-md-auto">
         <div class="row">
             <div class="from-group">
-                <strong>Data Matricula: </strong>{{$aluno->data_matricula}}
+                    <?php   $data = new DateTime($aluno->data_matricula);
+                    $datasaida =$data->format('Y/m/d  --  \ H:i:s'); ?>
+                <strong>Data Matricula: </strong>{{$datasaida}}
             </div>
         </div>
     </div>
@@ -44,7 +46,7 @@
     </div>
 
     <br>
-    <td><a href="{{route('alunos.index', $aluno->id)}}">Retornar Lista Alunos</a></td>
+    <td><a href="{{route('alunos.index', $aluno->id)}}"><button class="btn btn-outline-danger"> Retornar Lista Alunos</button></a></td>
 
 
 
